@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+header .logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #444;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+/* background Section */
+.frontbackground {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.front-background-image {
+  max-width: 1200px;
+  max-height: 450px;
+  width: 100%;
+  height: auto;
+}
+/* Slider Section */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px;
+}
+
+.slide {
+  flex: 0 0 250px;
+  background: #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+height:300px;
+width:400px;
+}
+
+.slide p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.slide button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slide button:hover {
+  background-color: #0056b3;
+}
+
+/* Section Background Colors */
+.featured {
+  background-color: #f0f8ff;
+  padding: 20px 0;
+}
+/* New styles for the registration */
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form .form-group label {
+  margin-right: 10px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+  width: 48%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 4%;
+  display: inline-block;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+  background-color: #444;
+}
+
+form .buttons-group {
+  display: flex;
+  justify-content: space-between;
+}
+/* login form */
+.loginbox {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.loginbox label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.loginbox input[type="email"],
+.loginbox input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.loginbox button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginbox button:hover {
+  background-color: #444;
+}
+
+.loginbox a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.loginbox a:hover {
+  color: #ffcc00;
+}
+
+.loginbox p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.loginbox p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.loginbox p a:hover {
+  color: #ffcc00;
+}
